@@ -84,7 +84,7 @@ Terminal 2:
 ```bash
 python scripts/load_test.py
 python scripts/validate_logs.py
-python scripts/validate_dashboard.py
+
 python -m pytest -q
 ```
 
