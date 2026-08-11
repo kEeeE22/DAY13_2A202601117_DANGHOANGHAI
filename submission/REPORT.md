@@ -51,6 +51,10 @@
 Với mỗi thành viên, ghi rõ nhiệm vụ và link commit/PR tương ứng.
 
 
-| Thành viên   | Phần việc                                                                                                               | Commit/PR | Điều đã học                                                                        |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------------- |
-| Thành viên C | Metrics & Dashboard: bổ sung`error_rate_pct`, xác minh 6 panel dashboard, tạo dashboard artifact từ `data/logs.jsonl` | TODO      | Biết cách biến log thành SLI/SLO để đọc triệu chứng trước khi mở trace/log |
+| Thành viên | Phần việc | Commit/PR | Điều đã học |
+|---|---|---|---|
+| Thành viên A | CP1 Middleware, gán Correlation ID, và bổ sung exception handler (phần mở rộng). | TODO | Hiểu cách gán Correlation ID để dễ dàng tra cứu log. |
+| Thành viên B | CP1 PII Scrubbing, regex patterns và kiểm chứng log không lộ PII. | TODO | Hiểu cách dùng regex để bảo vệ dữ liệu PII an toàn. |
+| Thành viên C | CP1/CP2 đo đếm error_rate_pct và thiết kế spec Dashboard 6 nhóm chỉ số. | TODO | Biết cách biến log thành SLI/SLO để đọc triệu chứng trước khi mở trace/log. |
+| Thành viên D | CP2 Thiết lập SLO, viết Alerts rules và Alert Runbook xử lý sự cố. | TODO | Hiểu cách thiết lập các cảnh báo dựa trên ngưỡng SLO. |
+| Thành viên E | Chạy load test, bọc trace cho sub-component RAG/LLM, dẫn dắt điều tra Challenge và hoàn thiện báo cáo. | TODO | Cách ứng dụng Trace để truy vết lỗi đến tận gốc rễ (Root cause). |
