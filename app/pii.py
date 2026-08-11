@@ -8,14 +8,26 @@ PII_PATTERNS: dict[str, str] = {
     "phone_vn": r"(?<!\d)(?:\+84|0)(?:[ .-]?\d){9}(?!\d)",
     "cccd": r"\b\d{12}\b",
     "credit_card": r"\b\d{4}[- ]?\d{4}[- ]?\d{4}[- ]?\d{4}\b",
-    # TODO: Add more patterns (e.g., Passport, Vietnamese address keywords)
+    # Vietnamese passport: one letter followed by 7-8 digits (e.g. C1234567).
+    "passport": r"\b[A-Z]\d{7,8}\b",
+    # Vietnamese address keywords: house number, street, ward, district, province.
+    # Each keyword consumes the following 1-3 tokens (stops at , ; newline) so the
+    # street/ward name itself is hidden, not just the keyword.
+    # "số" only matches a house number (số + digits) to avoid over-redaction
+    # of common phrases like "số lượng"; "số nhà" is matched as a full keyword.
+    "address_vn": (
+        r"\b(?:số\s*\d+|"
+        r"(?:số nhà|thành phố|đường|phường|quận|huyện|tỉnh|xã|ấp)"
+        r"\s+[^,\s;]+(?:\s+[^,\s;]+){0,2})"
+    ),
 }
 
 
 def scrub_text(text: str) -> str:
     safe = text
     for name, pattern in PII_PATTERNS.items():
-        safe = re.sub(pattern, f"[REDACTED_{name.upper()}]", safe)
+        # IGNORECASE handles capitalized Vietnamese address keywords (Đường, Quận, ...).
+        safe = re.sub(pattern, f"[REDACTED_{name.upper()}]", safe, flags=re.IGNORECASE)
     return safe
 
 
