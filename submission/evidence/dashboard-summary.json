@@ -1,14 +1,15 @@
 {
   "latency": {
-    "p50_ms": 2651.0,
-    "p95_ms": 2651.0,
-    "p99_ms": 2651.0
+    "p50_ms": 1109.0,
+    "p95_ms": 3692.0,
+    "p99_ms": 3692.0
   },
   "traffic": {
-    "request_count": 5,
+    "request_count": 20,
     "requests_per_minute": {
-      "04:30": 3,
-      "04:31": 2
+      "04:43": 10,
+      "04:44": 2,
+      "04:45": 8
     }
   },
   "errors": {
@@ -16,18 +17,19 @@
     "breakdown": {}
   },
   "cost": {
-    "total_usd": 0.010641,
-    "avg_usd": 0.002128,
+    "total_usd": 0.0399,
+    "avg_usd": 0.001995,
     "cost_by_minute": {
-      "04:30": 0.004209,
-      "04:31": 0.006432
+      "04:43": 0.018255,
+      "04:44": 0.002703,
+      "04:45": 0.018942
     }
   },
   "tokens": {
-    "tokens_in_total": 162,
-    "tokens_out_total": 677
+    "tokens_in_total": 660,
+    "tokens_out_total": 2528
   },
   "quality": {
-    "quality_avg": 0.86
+    "quality_avg": 0.88
   }
 }

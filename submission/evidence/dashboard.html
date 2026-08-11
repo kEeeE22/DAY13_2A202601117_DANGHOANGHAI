@@ -32,25 +32,26 @@
       <h1>Day 13 AI Observability</h1>
       <div class="small">Source: data/logs.jsonl</div>
     </div>
-    <div class="meta">Time range: 60 minutes<br>Refresh: 30 seconds<br>Generated: 2026-08-11 04:31 UTC</div>
+    <div class="meta">Time range: 60 minutes<br>Refresh: 30 seconds<br>Generated: 2026-08-11 04:46 UTC</div>
   </header>
   <section class="grid">
     <article class="panel">
       <h2>Latency percentiles</h2>
       <div class="subgrid">
-        <div class="metric"><div class="label">P50</div><div class="value">2651.0</div><div class="label">ms</div></div>
-        <div class="metric"><div class="label">P95</div><div class="value">2651.0</div><div class="label">ms</div></div>
-        <div class="metric"><div class="label">P99</div><div class="value">2651.0</div><div class="label">ms</div></div>
+        <div class="metric"><div class="label">P50</div><div class="value">1109.0</div><div class="label">ms</div></div>
+        <div class="metric"><div class="label">P95</div><div class="value">3692.0</div><div class="label">ms</div></div>
+        <div class="metric"><div class="label">P99</div><div class="value">3692.0</div><div class="label">ms</div></div>
       </div>
       <p class="small">SLO: p95 lte 3000 ms</p>
     </article>
     <article class="panel">
       <h2>Request traffic</h2>
-      <div class="value">5</div>
+      <div class="value">20</div>
       <p class="small">Unit: requests per minute. SLO: rate gte 1.</p>
       <pre>{
-  "04:30": 3,
-  "04:31": 2
+  "04:43": 10,
+  "04:44": 2,
+  "04:45": 8
 }</pre>
     </article>
     <article class="panel">
@@ -61,25 +62,26 @@
     </article>
     <article class="panel">
       <h2>Cost over time</h2>
-      <div class="value">$0.010641</div>
+      <div class="value">$0.0399</div>
       <p class="small">USD total. SLO: total lte 2.5 USD.</p>
       <pre>{
-  "04:30": 0.004209,
-  "04:31": 0.006432
+  "04:43": 0.018255,
+  "04:44": 0.002703,
+  "04:45": 0.018942
 }</pre>
     </article>
     <article class="panel">
       <h2>Input and output tokens</h2>
       <div class="subgrid">
-        <div class="metric"><div class="label">Input</div><div class="value">162</div></div>
-        <div class="metric"><div class="label">Output</div><div class="value">677</div></div>
-        <div class="metric"><div class="label">Total</div><div class="value">839</div></div>
+        <div class="metric"><div class="label">Input</div><div class="value">660</div></div>
+        <div class="metric"><div class="label">Output</div><div class="value">2528</div></div>
+        <div class="metric"><div class="label">Total</div><div class="value">3188</div></div>
       </div>
       <p class="small">SLO: sum_by_field lte 50000 tokens.</p>
     </article>
     <article class="panel">
       <h2>Quality proxy</h2>
-      <div class="value ok">0.86</div>
+      <div class="value ok">0.88</div>
       <p class="small">Unit: score 0 to 1. SLO: mean gte 0.75.</p>
     </article>
   </section>
