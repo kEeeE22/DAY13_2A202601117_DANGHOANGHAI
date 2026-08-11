@@ -1,0 +1,33 @@
+{
+  "latency": {
+    "p50_ms": 2651.0,
+    "p95_ms": 2651.0,
+    "p99_ms": 2651.0
+  },
+  "traffic": {
+    "request_count": 5,
+    "requests_per_minute": {
+      "04:30": 3,
+      "04:31": 2
+    }
+  },
+  "errors": {
+    "error_rate_pct": 0.0,
+    "breakdown": {}
+  },
+  "cost": {
+    "total_usd": 0.010641,
+    "avg_usd": 0.002128,
+    "cost_by_minute": {
+      "04:30": 0.004209,
+      "04:31": 0.006432
+    }
+  },
+  "tokens": {
+    "tokens_in_total": 162,
+    "tokens_out_total": 677
+  },
+  "quality": {
+    "quality_avg": 0.86
+  }
+}
