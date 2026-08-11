@@ -4,8 +4,16 @@
 
 - Tên nhóm: B05
 - Repository URL: [github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI.git](https://github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI.git)
-- Commit SHA cuối: 4c2ef24a489f84eb7852f8e1adeefe17f87e86af
-- Thành viên và vai trò: Nhóm đã thực hiện các vai trò Logging, Tracing, Dashboard và Incident.
+- Commit SHA cuối: 0143a431d2c435910335f2e2a73bcc7ac31b87f1
+- Thành viên và vai trò:
+
+
+
+* **Đặng Hoàng Hải-2A202601117:** CP1 Middleware, gán Correlation ID, và bổ sung exception handler (phần mở rộng).
+* **Nguyễn Hoàng Hiệp-2A202601319:** CP1 PII Scrubbing, regex patterns và kiểm chứng log không lộ PII.
+* **Nguyễn Minh Huy-2A202601303:** CP1/CP2 đo đếm `error_rate_pct` và thiết kế spec Dashboard 6 nhóm chỉ số.
+* **Ngô Phương Nam-2A202601231:** CP2 Thiết lập SLO, viết Alerts rules và Alert Runbook xử lý sự cố.
+* **Dương Ngọc Tiến-2A202601401:** Chạy load test, bọc trace cho sub-component RAG/LLM (phần mở rộng), dẫn dắt điều tra Challenge (CP3) và hoàn thiện báo cáo nhóm.
 
 ## 2. Kết quả kỹ thuật
 
@@ -51,10 +59,10 @@
 Với mỗi thành viên, ghi rõ nhiệm vụ và link commit/PR tương ứng.
 
 
-| Thành viên | Phần việc | Commit/PR | Điều đã học |
-|---|---|---|---|
-| Thành viên A | CP1 Middleware, gán Correlation ID, và bổ sung exception handler (phần mở rộng). | TODO | Hiểu cách gán Correlation ID để dễ dàng tra cứu log. |
-| Thành viên B | CP1 PII Scrubbing, regex patterns và kiểm chứng log không lộ PII. | TODO | Hiểu cách dùng regex để bảo vệ dữ liệu PII an toàn. |
-| Thành viên C | CP1/CP2 đo đếm error_rate_pct và thiết kế spec Dashboard 6 nhóm chỉ số. | TODO | Biết cách biến log thành SLI/SLO để đọc triệu chứng trước khi mở trace/log. |
-| Thành viên D | CP2 Thiết lập SLO, viết Alerts rules và Alert Runbook xử lý sự cố. | TODO | Hiểu cách thiết lập các cảnh báo dựa trên ngưỡng SLO. |
-| Thành viên E | Chạy load test, bọc trace cho sub-component RAG/LLM, dẫn dắt điều tra Challenge và hoàn thiện báo cáo. | TODO | Cách ứng dụng Trace để truy vết lỗi đến tận gốc rễ (Root cause). |
+| Thành viên         | Phần việc                                                                                                       | Commit/PR                                                                                                                                                                                                      | Điều đã học                                                                         |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Đặng Hoàng Hải   | CP1 Middleware, gán Correlation ID, và bổ sung exception handler (phần mở rộng).                            | [github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI/pull/1](https://github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI/pull/1)                                                                                   | Hiểu cách gán Correlation ID để dễ dàng tra cứu log.                             |
+| Nguyễn Hoàng Hiệp | CP1 PII Scrubbing, regex patterns và kiểm chứng log không lộ PII.                                            | [github.com/VinUni-AI20k/Day13-K3-Observability/commit/3b804625bdbd87999676ab919043cc1cd63c391b](https://github.com/VinUni-AI20k/Day13-K3-Observability/commit/3b804625bdbd87999676ab919043cc1cd63c391b)       | Hiểu cách dùng regex để bảo vệ dữ liệu PII an toàn.                            |
+| Nguyễn Minh Huy     | CP1/CP2 đo đếm error_rate_pct và thiết kế spec Dashboard 6 nhóm chỉ số.                                  | [github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI/commit/2dafd03bd643108762d39160abbc63570c17c48c](https://github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI/commit/2dafd03bd643108762d39160abbc63570c17c48c) | Biết cách biến log thành SLI/SLO để đọc triệu chứng trước khi mở trace/log. |
+| Ngô Phương Nam    | CP2 Thiết lập SLO, viết Alerts rules và Alert Runbook xử lý sự cố.                                        | [github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI/commit/7722c109a97ceb1e22e19ec5dc2ffe9b1e489591](https://github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI/commit/7722c109a97ceb1e22e19ec5dc2ffe9b1e489591) | Hiểu cách thiết lập các cảnh báo dựa trên ngưỡng SLO.                         |
+| Dương Ngọc Tiến  | Chạy load test, bọc trace cho sub-component RAG/LLM, dẫn dắt điều tra Challenge và hoàn thiện báo cáo. | [github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI/commit/0301030b67f2f135f5cff917f77611bc1cf2ff21](https://github.com/kEeeE22/DAY13_2A202601117_DANGHOANGHAI/commit/0301030b67f2f135f5cff917f77611bc1cf2ff21) | Cách ứng dụng Trace để truy vết lỗi đến tận gốc rễ (Root cause).             |
